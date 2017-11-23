@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LocationSample"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="LocationSample.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btnGetLocation" 
+                    Text="Get My Location" 
+                    Clicked="btnGetLocation_Clicked"
+                    TextColor="White" 
+                    BackgroundColor="#4CAEE3" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="Center">
+                
+            </Button>
+
+            <Label x:Name="lblCoords" 
+                   BackgroundColor="LightGray" 
+                   Text="Coords will be here">
+                
+            </Label>
+
+            <maps:Map x:Name="MyMap" 
+                      IsShowingUser="True" 
+                      MapType="Street" 
+                      HorizontalOptions="FillAndExpand" 
+                      VerticalOptions="FillAndExpand" 
+                      BackgroundColor="Green">
+                
+            </maps:Map>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
