@@ -30,7 +30,7 @@ namespace LocationSample.Droid
 
         public void ObtainMyLocation()
         {
-            LocationManager lm = Forms.Context.GetSystemService(Context.LocationService) as LocationManager;
+            LocationManager lm = Android.App.Application.Context.GetSystemService(Context.LocationService) as LocationManager;
             lm.RequestLocationUpdates
                 (
                     provider: LocationManager.NetworkProvider,
